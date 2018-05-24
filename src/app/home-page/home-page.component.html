@@ -1,0 +1,15 @@
+<div class="homePage" >
+  <div class="tab-group">
+    <nav mat-tab-nav-bar
+      backgroundColor="secondary"
+      color="primary" >
+      <app-nav-link *ngFor="let link of navLinks"
+        [link]="link" >
+      </app-nav-link>
+    </nav>
+
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+

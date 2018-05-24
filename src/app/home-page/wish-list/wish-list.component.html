@@ -1,0 +1,17 @@
+<mat-card>
+  <mat-card-title>Wishlist</mat-card-title>
+  <mat-card-content class="hide">
+    <div class="text">
+    Add a movie!
+    </div>
+  </mat-card-content>
+  <div class="background">
+  <mat-card-content class="flex scroll top">
+    <app-movie *ngFor="let movie of wishlist"
+      [movie]="movie"
+      [inWishlist]="true"
+      [width]="'150px'">
+    </app-movie>
+  </mat-card-content>
+  </div>
+</mat-card>

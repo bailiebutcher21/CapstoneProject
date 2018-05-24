@@ -1,0 +1,9 @@
+<mat-card>
+  <mat-card-title><i class="material-icons">local_movies</i><span>Upcoming Movies</span><i class="material-icons">local_movies</i></mat-card-title>
+  <mat-card-content class="flex scroll">
+    <app-movie  *ngFor="let movie of upcomingMovies"
+               [movie]="movie"
+               [width]="'250px'">
+    </app-movie>
+  </mat-card-content>
+</mat-card>

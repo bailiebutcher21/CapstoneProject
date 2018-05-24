@@ -1,0 +1,23 @@
+<div class="fullNav"><mat-toolbar color='primary' class="sticky">
+  <mat-toolbar-row>
+    <span class="phoneHidden">Movie Rater Application</span>
+    <div class="spaceBetween">
+      <button mat-button *ngIf='!loggedIn'
+        (click)="openLogin()" >Login</button>
+      <button mat-button *ngIf='loggedIn'
+        [matMenuTriggerFor]='userMenu' >
+        {{ user.name }}
+      </button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-menu #userMenu='matMenu' >
+  <!-- <button mat-menu-item>Update User Info</button> -->
+  <button mat-menu-item (click)="logout()">Logout</button>
+  <button mat-menu-item>Feedback</button>
+  <button mat-menu-item>Help</button>
+</mat-menu>
+    <div class="backImage image wrap needsFlex flexSpecs">
+    </div>
+</div>
+<!-- If the User cannot do it, or won't be able to do it by the end of the sprint, don't tell them they can!!!!!!! -->

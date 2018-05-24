@@ -1,0 +1,74 @@
+/*.upcomingMovies{
+  border: solid 1px;
+  border-radius: 25px;
+  margin: 10px 1px 10px 1px;
+}
+.needsFlex{
+  display: flex;
+}
+.scroll {
+  display: flex;
+  overflow: scroll;
+}
+.images{
+  width:1420px;
+  height:400px;
+}
+.movieImage{
+  height: 400px;
+  width: 280px;
+}
+.matCard{
+  width: 27.5%;
+}
+*/
+.upcomingMovies{
+  border: solid 1px;
+  border-radius: 25px;
+  margin: 10px 1px 10px 1px;
+}
+.card{
+  display:flex;
+}
+.needsFlex{
+  display: flex;
+}
+.flex{
+  display:flex;
+}
+.images{
+  width:1420px;
+  height:400px;
+}
+.movieImage{
+  height: 400px;
+  width: 280px;
+}
+.matCard{
+  width: 27.5%;
+}
+.scroll {
+  display: flex;
+  overflow: scroll;
+}
+mat-card-title{
+  text-align: center;
+  color: whitesmoke;
+  background-color: black;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-around;
+}
+@media only screen and (min-width: 600px) {
+  mat-card-title {
+    letter-spacing: 10px;
+    padding: 1.5px;
+
+  }
+}
+@media only screen and (min-width: 768px) {
+  mat-card-title {
+    letter-spacing: 20px;
+    padding: 3px;
+  }
+}

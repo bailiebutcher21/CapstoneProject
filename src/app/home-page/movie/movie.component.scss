@@ -1,0 +1,14 @@
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.small-margin {
+  margin: 5px;
+}
+.description{
+  height: 200px;
+  overflow-y: scroll;
+}

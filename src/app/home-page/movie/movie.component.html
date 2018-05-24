@@ -1,0 +1,36 @@
+<mat-card class="noBlock small-margin" [style.width]="width">
+  <mat-card-title class="truncate">{{movie.title}}</mat-card-title>
+  <img mat-card-image
+    [src]="movie.image.url"
+    [alt]="movie.image.description" >
+  <mat-card-content *ngIf='!inWishlist' class="description">
+    <p>{{movie.description}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <!-- the remove from wishlist isn't ready this sprint I am commenting it out until next sprint -->
+    <button *ngIf="inWishlist"
+      mat-raised-button
+      (click)="removeMovieFromWishlist()"
+      color="accent" >
+      Remove From Wish List
+    </button>
+
+    <div *ngIf="!authService.authenticated" matTooltip="Log in to add movies to your Wishlist!">
+      <button *ngIf="!inWishlist"
+        mat-raised-button
+        (click)="addMovieToWishlist()"
+        color="accent"
+        [disabled]="!authService.authenticated">
+        Add To Wish List
+      </button>
+    </div>
+    <div *ngIf="authService.authenticated">
+      <button *ngIf="!inWishlist"
+              mat-raised-button
+              (click)="addMovieToWishlist()"
+              color="accent">
+      Add To Wish List
+    </button>
+    </div>
+  </mat-card-actions>
+</mat-card>

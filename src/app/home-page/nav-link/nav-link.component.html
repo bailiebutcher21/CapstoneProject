@@ -1,0 +1,8 @@
+<a mat-tab-link
+  [routerLink]="link.link"
+  routerLinkActive="mat-tab-link-active"
+  #rla="routerLinkActive"
+  [active]="activeLink"
+  [routerLinkActiveOptions]="{exact: true}" >
+  {{link.label}}
+</a>

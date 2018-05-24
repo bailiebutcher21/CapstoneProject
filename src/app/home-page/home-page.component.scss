@@ -1,0 +1,21 @@
+.upcoming{
+  width: 100%;
+  overflow: scroll;
+}
+.homePage{
+  margin: 0 10.5% 0 10.5%;
+}
+@media only screen and (min-width: 600px) {
+  mat-tab-group{
+  }
+}
+@media only screen and (min-width: 768px) {
+  mat-tab-group{
+  }
+}
+.tab-group{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  bottom: 45px;
+}
